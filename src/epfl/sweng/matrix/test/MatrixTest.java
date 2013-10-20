@@ -2,6 +2,9 @@ package epfl.sweng.matrix.test;
 
 import static junit.framework.Assert.*;
 
+import java.util.Arrays;
+
+import org.junit.Assert;
 import org.junit.Test;
 
 import epfl.sweng.matrix.SquareMatrix;
@@ -97,5 +100,17 @@ public class MatrixTest {
 		SquareMatrix inverse = matrix.inverse();
 		SquareMatrix multiplication = inverse.muliplyWith(matrix);
 		assertEquals(identity, multiplication);
+	}
+
+	@Test
+	public void testValues() {
+		double[][] initialValues = new double[][] { { 1, 2 }, { 3, 4 } };
+
+		SquareMatrix matrix = getMatrix(initialValues);
+		double[][] values = matrix.values();
+		assertEquals(initialValues.length, values.length);
+		for (int index = 0; index < initialValues.length; index++) {
+			Assert.assertArrayEquals(initialValues[index], values[index], 0.01);
+		}
 	}
 }

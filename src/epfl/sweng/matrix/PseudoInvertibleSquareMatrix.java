@@ -43,5 +43,4 @@ public class PseudoInvertibleSquareMatrix extends SquareMatrix {
 		Matrix result = V.multiply(S_I).multiply(U.transpose());
 		return new PseudoInvertibleSquareMatrix(result);
 	}
-
 }

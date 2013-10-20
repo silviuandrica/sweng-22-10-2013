@@ -52,6 +52,10 @@ public class SquareMatrix {
 		return result;
 	}
 
+	public double[][] values() {
+		return matrix.toArray();
+	}
+
 	protected Basic2DMatrix matrix() {
 		return matrix;
 	}
