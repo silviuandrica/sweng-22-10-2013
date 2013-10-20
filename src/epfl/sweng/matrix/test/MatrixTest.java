@@ -1,8 +1,6 @@
 package epfl.sweng.matrix.test;
 
-import static junit.framework.Assert.*;
-
-import java.util.Arrays;
+import static junit.framework.Assert.assertEquals;
 
 import org.junit.Assert;
 import org.junit.Test;
