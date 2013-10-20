@@ -52,7 +52,7 @@ public class SquareMatrix {
 		return result;
 	}
 
-	public Basic2DMatrix matrix() {
+	protected Basic2DMatrix matrix() {
 		return matrix;
 	}
 
