@@ -67,10 +67,7 @@ public class SquareMatrix {
 
 	@Override
 	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((matrix == null) ? 0 : matrix.hashCode());
-		return result;
+		return matrix.hashCode();
 	}
 
 	@Override
